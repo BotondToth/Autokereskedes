@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  manufacturer: MyString
+  type: 
+  year: 1
+  cc: 1
+  hp: 1
+  price: 1
+
+two:
+  manufacturer: MyString
+  type: 
+  year: 1
+  cc: 1
+  hp: 1
+  price: 1
