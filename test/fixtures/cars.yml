@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  manufacturer: MyString
+  car_type: MyString
+  cover: MyString
+  cc: 1
+  engine: MyString
+  description: MyString
+  year: 1
+
+two:
+  manufacturer: MyString
+  car_type: MyString
+  cover: MyString
+  cc: 1
+  engine: MyString
+  description: MyString
+  year: 1
