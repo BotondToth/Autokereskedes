@@ -9,7 +9,6 @@ car_attributes = [
   { manufacturer: "BMW", car_type: "318i", cover: "https://www.autonavigator.hu/wp-content/uploads/2015/01/140458_source.jpg", year: "2013", engine: "Benzin", cc: "1578", mileage: "187000" , description: "Tökéletes állapot, érvényes okmányokkal eladó.", price: "1990000"},
   { manufacturer: "Hyundai", car_type: "i20 Life", cover: "https://i.ytimg.com/vi/XcGJ0c8cdzM/maxresdefault.jpg", year: "2013", engine: "Benzin", cc: "1248", mileage: "87000" , description: "Megkímélt állapot, érvényes okmányokkal eladó.", price: "1990000"},
 ]
-]
 
 car_attributes.each do |attributes|
   Car.create(attributes) unless Car.where(attributes).first
