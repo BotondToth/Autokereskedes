@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+#-------------------------------------
 #SAJAT GEM-EK ITT TALALHATOK:
 
 #bootstrap
@@ -49,6 +50,11 @@ end
 
 #kaminari - pagination
 gem 'kaminari'
+
+#rubocop - codestyle
+gem install rubocop
+
+#--------------------------------------
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
