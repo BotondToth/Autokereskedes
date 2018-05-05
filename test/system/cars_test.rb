@@ -20,6 +20,7 @@ class CarsTest < ApplicationSystemTestCase
     fill_in "Description", with: @car.description
     fill_in "Engine", with: @car.engine
     fill_in "Manufacturer", with: @car.manufacturer
+    fill_in "Mileage", with: @car.mileage
     fill_in "Year", with: @car.year
     click_on "Create Car"
 
@@ -37,6 +38,7 @@ class CarsTest < ApplicationSystemTestCase
     fill_in "Description", with: @car.description
     fill_in "Engine", with: @car.engine
     fill_in "Manufacturer", with: @car.manufacturer
+    fill_in "Mileage", with: @car.mileage
     fill_in "Year", with: @car.year
     click_on "Update Car"
 

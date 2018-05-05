@@ -4,16 +4,18 @@ one:
   manufacturer: MyString
   car_type: MyString
   cover: MyString
-  cc: 1
-  engine: MyString
-  description: MyString
   year: 1
+  engine: MyString
+  cc: 1
+  mileage: 1
+  description: MyString
 
 two:
   manufacturer: MyString
   car_type: MyString
   cover: MyString
-  cc: 1
-  engine: MyString
-  description: MyString
   year: 1
+  engine: MyString
+  cc: 1
+  mileage: 1
+  description: MyString

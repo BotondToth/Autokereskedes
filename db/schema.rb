@@ -10,18 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_03_184640) do
+ActiveRecord::Schema.define(version: 2018_05_05_173221) do
 
   create_table "cars", force: :cascade do |t|
     t.string "manufacturer"
     t.string "car_type"
     t.string "cover"
-    t.integer "cc"
-    t.string "engine"
-    t.string "description"
     t.integer "year"
+    t.string "engine"
+    t.integer "cc"
+    t.integer "mileage"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "price"
   end
 
 end

@@ -1,39 +1,43 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Manufacturer:</strong>
+  <strong>Gyártó:</strong>
   <%= @car.manufacturer %>
 </p>
 
 <p>
-  <strong>Car type:</strong>
+  <strong>Típus:</strong>
   <%= @car.car_type %>
 </p>
 
 <p>
-  <strong>Cover:</strong>
-  <%= @car.cover %>
+  <strong>Kép:</strong>
+  <img src=<%= @car.cover %>></img>
 </p>
 
 <p>
-  <strong>Cc:</strong>
-  <%= @car.cc %>
+  <strong>Gyártási év:</strong>
+  <%= @car.year %>
 </p>
 
 <p>
-  <strong>Engine:</strong>
+  <strong>Üzemanyag:</strong>
   <%= @car.engine %>
 </p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @car.description %>
+  <strong>Hengerűrtartalom:</strong>
+  <%= @car.cc %> cm3
 </p>
 
 <p>
-  <strong>Year:</strong>
-  <%= @car.year %>
+  <strong>Kilométeróra állása:</strong>
+  <%= @car.mileage %>
 </p>
 
-<%= link_to 'Edit', edit_car_path(@car) %> |
-<%= link_to 'Back', cars_path %>
+<p>
+  <strong>Leírás:</strong>
+  <%= @car.description %>
+</p>
+
+<%= link_to 'Vissza', cars_path %>
