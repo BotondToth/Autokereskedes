@@ -1,0 +1,16 @@
+hu:
+  title: "Autókereskedés"
+  show:
+    manufacturer: "Gyártó:"
+    origin: "Gyártási év:"
+    fuel_type: "Üzemanyag"
+    engine_size: "Hengerűrtartalom:"
+    mileage: "Futott km:"
+    descr: "Leírás:"
+  type: "Típus"
+  details: "Részletek"
+  navbar:
+    new_car: "Új autó felvétele"
+    home_page: "Kezdőoldal"
+  search: "Keresés"
+  back: "Vissza"

@@ -13,3 +13,15 @@ car_attributes = [
 car_attributes.each do |attributes|
   Car.create(attributes) unless Car.where(attributes).first
 end
+
+Category.delete_all
+category_attributes = [
+	{category_id: 1, name:"SUV"},
+	{category_id: 2, name:"Szedán"},
+	{category_id: 3, name:"Hatchback"},
+	{category_id: 4, name:"Kombi"}
+]
+
+category_attributes.each do |attributes|
+  Category.create(attributes) unless Category.where(attributes).first
+end

@@ -1,28 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<table>
-  <tbody>
-    <% @cars.each do |car| %>
-      <tr>
-        <div class="card h-100">
-          <img class="card-img-top" src= <%= car.cover%> width="400" height="700" alt="">
-          <div class="card-body">
-                  <h4 class="card-title">
-                    <a><%= car.manufacturer %> <%= car.car_type %></a>
-                  </h4>
-                  <h5><%= car.price %> Ft</h5>
-                  <p class="card-text"><%= car.description %></p>
-               </div>
-              <div class="card-footer">
-                 <p class="card-text"><%= car.mileage %> Km</p>
-                 <p class="card-text"><%= car.description %></p>
-                 <%= link_to 'Részletek', car %>
-              </div>
-          </div>
-        </div>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="grid-container">
+  <% @cars.each do |car| %>
+    <div class="grid-item">
+        <img class="card-img-top" src= <%= car.cover %> width="180" height="300" alt="">
+         <h4 class="card-title">
+            <a><%= car.manufacturer %> <%= car.car_type %></a>
+         </h4>
+         <p class="card-text"><%= car.description %></p>
+         <div class="card-footer" id="car_details">
+            <h5><%= car.price %> Ft</h5>
+            <p class="card-text"><%= car.mileage %> Km</p>
+            <p class="card-text"><%= car.description %></p>
+            <%= link_to 'Részletek', car %>
+         </div>
+    </div>
+  <% end %>
+</div>
 
 <br>

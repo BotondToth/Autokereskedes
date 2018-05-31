@@ -1,43 +1,46 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Gyártó:</strong>
-  <%= @car.manufacturer %>
+  <img id="cover" src=<%= @car.cover %>></img>
 </p>
 
-<p>
-  <strong>Típus:</strong>
-  <%= @car.car_type %>
-</p>
-
-<p>
-  <strong>Kép:</strong>
-  <img src=<%= @car.cover %>></img>
-</p>
-
-<p>
-  <strong>Gyártási év:</strong>
-  <%= @car.year %>
-</p>
-
-<p>
-  <strong>Üzemanyag:</strong>
-  <%= @car.engine %>
-</p>
-
-<p>
-  <strong>Hengerűrtartalom:</strong>
-  <%= @car.cc %> cm3
-</p>
-
-<p>
-  <strong>Kilométeróra állása:</strong>
-  <%= @car.mileage %>
-</p>
-
-<p>
-  <strong>Leírás:</strong>
-  <%= @car.description %>
-</p>
+<table class="table table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th>Adatok</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong><%= I18n.t 'show.manufacturer' %></strong></strong></td>
+        <td><%= @car.manufacturer %></td>
+      </tr>
+      <tr>
+        <td><strong><strong><%= I18n.t 'type' %></strong></strong></td>
+        <td><%= @car.car_type %></td>
+      </tr>
+      <tr>
+        <td><strong><%= I18n.t 'show.origin' %></strong></td>
+        <td><%= @car.year %></td>
+      </tr>
+      <tr>
+        <td><strong><%= I18n.t 'show.fuel_type' %></strong></td>
+        <td><%= @car.engine %></td>
+      </tr>
+      <tr>
+        <td><strong><%= I18n.t 'show.engine_size' %></strong></td>
+        <td><%= @car.cc %> cm3</td>
+      </tr>
+      <tr>
+        <td><strong><%= I18n.t 'show.mileage' %></strong></td>
+        <td><%= @car.mileage %></td>
+      </tr>
+      <tr>
+        <td><strong><%= I18n.t 'show.descr' %></strong></td>
+        <td><%= @car.description %></td>
+      </tr>
+    </tbody>
+  </table>
 
 <%= link_to 'Vissza', cars_path %>
