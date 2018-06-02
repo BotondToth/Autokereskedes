@@ -25,6 +25,16 @@ class CarsController < ApplicationController
   def edit
   end
 
+  # GET /find/manufacturer
+  # pl /find/BMW
+  def find
+    @cars = if params[:manufacturer]
+      Car.where('manufacturer LIKE ?', "%#{params[:manufacturer]}%")
+    else
+      Car.all
+    end
+  end
+
   # POST /cars
   # POST /cars.json
   def create

@@ -9,6 +9,7 @@ hu:
     descr: "Leírás:"
     category: "Kategória:"
   type: "Típus"
+  types: "Típusok"
   details: "Részletek"
   navbar:
     new_car: "Új autó felvétele"
