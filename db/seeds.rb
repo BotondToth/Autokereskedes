@@ -8,6 +8,7 @@ car_attributes = [
   { manufacturer: "Fiat", car_type: "Grande Punto", cover: "http://cdn2.carbuyer.co.uk/sites/carbuyer_d7/files/styles/article_main_image/public/jato_uploaded/Fiat%20Grande%20Punto.jpg?itok=hPjE5r11", year: "2010", engine: "Benzin", cc: "1598", mileage: "117000" , description: "Megkímélt állapot, érvényes okmányokkal eladó.", price: "2290000", category: "3"},
   { manufacturer: "BMW", car_type: "318i", cover: "https://www.autonavigator.hu/wp-content/uploads/2015/01/140458_source.jpg", year: "2013", engine: "Benzin", cc: "1578", mileage: "187000" , description: "Tökéletes állapot, érvényes okmányokkal eladó.", price: "1990000", category: "2"},
   { manufacturer: "Hyundai", car_type: "i20 Life", cover: "https://i.ytimg.com/vi/XcGJ0c8cdzM/maxresdefault.jpg", year: "2013", engine: "Benzin", cc: "1248", mileage: "87000" , description: "Megkímélt állapot, érvényes okmányokkal eladó.", price: "1990000", category: "3"},
+  { manufacturer: "Mercedes-Benz", car_type: "G 270 CDI", cover: "https://mymoto.com.ng/wp-content/uploads/2018/01/20-12.jpg", year: "2005", engine: "Dízel", cc: "2685", mileage: "209010" , description: "Jobb hátsó sarok elem a lökhárítón és a jobb hátsó sárvédő műanyag szélesítés horzsolt, javítása folyamatban van. Számlákkal igazoltan karbantartott autóról van szó. Nem új az autó, de megkímélt darab.", price: "8499000", category: "5"}
 ]
 
 car_attributes.each do |attributes|
@@ -19,7 +20,8 @@ category_attributes = [
 	{category_id: 1, name:"SUV"},
 	{category_id: 2, name:"Szedán"},
 	{category_id: 3, name:"Hatchback"},
-	{category_id: 4, name:"Kombi"}
+	{category_id: 4, name:"Kombi"},
+  {category_id: 5, name:"Terepjáró"}
 ]
 
 category_attributes.each do |attributes|
