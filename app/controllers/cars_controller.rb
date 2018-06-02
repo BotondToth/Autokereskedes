@@ -10,6 +10,10 @@ class CarsController < ApplicationController
   # GET /cars/1
   # GET /cars/1.json
   def show
+    @car = Car.find(params[:id])
+    query_string = "SELECT * FROM categories WHERE category_id = " + @car.category
+    @category = Category.find_by_sql(query_string).first
+    @car.category = @category.name
   end
 
   # GET /cars/new

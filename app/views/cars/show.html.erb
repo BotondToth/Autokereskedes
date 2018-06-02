@@ -21,6 +21,10 @@
         <td><%= @car.car_type %></td>
       </tr>
       <tr>
+        <td><strong><%= I18n.t 'show.category' %></strong></td>
+        <td><%= @car.category %></td>
+      </tr>
+      <tr>
         <td><strong><%= I18n.t 'show.origin' %></strong></td>
         <td><%= @car.year %></td>
       </tr>
@@ -42,5 +46,3 @@
       </tr>
     </tbody>
   </table>
-
-<%= link_to 'Vissza', cars_path %>

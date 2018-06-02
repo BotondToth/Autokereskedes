@@ -7,6 +7,7 @@ hu:
     engine_size: "Hengerűrtartalom:"
     mileage: "Futott km:"
     descr: "Leírás:"
+    category: "Kategória:"
   type: "Típus"
   details: "Részletek"
   navbar:
@@ -14,3 +15,4 @@ hu:
     home_page: "Kezdőoldal"
   search: "Keresés"
   back: "Vissza"
+  succesfully_created: "Autó sikeresen létrehozva!"

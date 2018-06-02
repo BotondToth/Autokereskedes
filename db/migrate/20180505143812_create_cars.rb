@@ -9,7 +9,7 @@ class CreateCars < ActiveRecord::Migration[5.2]
       t.integer :cc
       t.integer :mileage
       t.string :description
-
+      t.integer :category_id
       t.timestamps
     end
   end
