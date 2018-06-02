@@ -29,7 +29,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'sqlite3'
+#kommentezd ki heroku deploy elott
+#gem 'sqlite3'
 
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
