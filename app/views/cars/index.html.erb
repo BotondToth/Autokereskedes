@@ -7,7 +7,7 @@
          <h4 class="card-title">
             <a><%= car.manufacturer %> <%= car.car_type %></a>
          </h4>
-         <p class="card-text"><%= car.description %></p>
+         <!--<p class="card-text"><%= car.description %></p>-->
          <div class="card-footer" id="car_details">
             <h5><%= car.price %> Ft</h5>
             <p class="card-text"><%= car.mileage %> Km</p>
@@ -16,6 +16,9 @@
          </div>
     </div>
   <% end %>
+  <div class="digg_pagination">
+    <%= will_paginate @posts, :container => false %>
+  </div>
 </div>
 
 <br>

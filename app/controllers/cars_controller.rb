@@ -5,6 +5,7 @@ class CarsController < ApplicationController
   # GET /cars.json
   def index
     @cars = Car.all
+    @cars = @cars.paginate(:page => params[:page], :per_page => 6)
   end
 
   # GET /cars/1
@@ -33,6 +34,7 @@ class CarsController < ApplicationController
     else
       Car.all
     end
+    @cars = @cars.paginate(:page => params[:page], :per_page => 6)
   end
 
   # POST /cars

@@ -19,6 +19,8 @@ car_attributes.each do |attributes|
   Car.create(attributes) unless Car.where(attributes).first
 end
 
+User.delete_all
+
 Category.delete_all
 category_attributes = [
 	{category_id: 1, name:"SUV"},

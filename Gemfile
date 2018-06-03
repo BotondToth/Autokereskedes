@@ -30,13 +30,14 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 #kommentezd ki heroku deploy elott
-#gem 'sqlite3'
+gem 'sqlite3'
 
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'friendly_id', '~> 5.1.0'
-
+gem 'will_paginate', '~> 3.1.0'
 gem 'rubocop'
+gem 'sorcery'
 
 #better_erros
 group :development do

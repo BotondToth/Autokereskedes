@@ -29,7 +29,21 @@
            <%= text_field_tag :manufacturer, "", class: "form-control mr-sm-2" %>
            <%= submit_tag t("search"), :class => "form-control mr-sm-2" %>
         <% end %>
+
       </div>
+      <div id="nav">
+      <% if current_user %>
+        <%= link_to t("user.profile.edit"), edit_user_path(current_user.id) %>
+        <%= link_to t("user.profile.logout"), :logout, method: :post %>
+      <% else %>
+        <%= link_to t("register"), new_user_path %> |
+        <%= link_to t("login"), :login %>
+      <% end %>
+  </div>
+  <div>
+    <p id="notice"><%= flash[:notice] %></p>
+    <p id="alert"><%= flash[:alert] %></p>
+  </div>
     </nav>
   </header>
   <div class="header-placeholder">

@@ -17,3 +17,27 @@ hu:
   search: "Keresés"
   back: "Vissza"
   succesfully_created: "Autó sikeresen létrehozva!"
+  register: "Regisztrálás"
+  login: "Bejelentkezés"
+  user:
+    details:
+      email: "Email cím:"
+      password: "Jelszó:"
+      password_again: "Jelszó (újra):"
+    profile:
+      logout: "Kijelentkezés"
+      edit: "Profilom"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              too_short: "Nem elég hosszú jelszó!"
+            password_confirmation:
+              blank: "Üres jelszó mező!"
+            email:
+              taken: "Ez az email cím már foglalt!"
+  will_paginate:
+    previous_label: "Előző"
+    next_label: "Következő"
