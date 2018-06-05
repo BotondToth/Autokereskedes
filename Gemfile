@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 #kommentezd ki heroku deploy elott
-gem 'sqlite3'
+#gem 'sqlite3'
 
 gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'

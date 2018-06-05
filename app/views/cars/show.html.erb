@@ -46,12 +46,3 @@
       </tr>
     </tbody>
   </table><br>
-
-<p>
-  <strong><%= I18n.t 'interested' %></strong>
-</p>
-<%= form_tag("/search", method: "get") do %>
-  <%= text_area_tag(:q) %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Elküld") %>
-<% end %>
