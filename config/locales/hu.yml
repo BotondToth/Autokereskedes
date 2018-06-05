@@ -41,3 +41,8 @@ hu:
   will_paginate:
     previous_label: "Előző"
     next_label: "Következő"
+  email:
+    greeting: "Üdvözöllek!"
+    registration: "Köszönöm, hogy regisztráltál, kellemes böngészést kívánok!"
+  parking: "Parkoló:"
+  to_parking: "Parkolóba!"

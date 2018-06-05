@@ -45,4 +45,9 @@
         <td><%= @car.description %></td>
       </tr>
     </tbody>
-  </table>
+  </table><br>
+<% if signed_in? %>
+  <div>Signed in as... <%= current_user.email %></div>
+<% end %>
+
+
