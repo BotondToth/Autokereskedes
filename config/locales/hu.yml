@@ -1,4 +1,5 @@
 hu:
+  data: "Adatok"
   title: "Autókereskedés"
   show:
     manufacturer: "Gyártó:"
